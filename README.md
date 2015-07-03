@@ -25,35 +25,35 @@ Simply pass the string to one of the custom twig methods listed below, like so:
 
 ```
 {% set myString = 'post' %}
-myString|pluralize
+{{ myString|pluralize }}
 ```
 results in...
 "posts"
 
 ```
 {% set myString = 'child' %}
-myString|pluralize
+{{ myString|pluralize }}
 ```
 results in...
 "children"
 
 ```
 {% set myString = 'sheep' %}
-myString|pluralize
+{{ myString|pluralize }}
 ```
 results in...
 "sheep"
 
 ```
 {% set myString = 'words' %}
-myString|pluralize
+{{ myString|pluralize }}
 ```
 results in...
 "words"
 
 ```
 {% set myString = 'CamelChild' %}
-myString|pluralize
+{{ myString|pluralize }}
 ```
 results in...
 "CamelChildren"
@@ -63,35 +63,35 @@ results in...
 
 ```
 {% set myString = 'posts' %}
-myString|singularize
+{{ myString|singularize }}
 ```
 results in...
 "post"
 
 ```
 {% set myString = 'children' %}
-myString|singularize
+{{ myString|singularize }}
 ```
 results in...
 "child"
 
 ```
 {% set myString = 'sheep' %}
-myString|singularize
+{{ myString|singularize }}
 ```
 results in...
 "sheep"
 
 ```
 {% set myString = 'word' %}
-myString|singularize
+{{ myString|singularize }}
 ```
 results in...
 "word"
 
 ```
 {% set myString = 'CamelChildren' %}
-myString|singularize
+{{ myString|singularize }}
 ```
 results in...
 "CamelChild"
@@ -101,28 +101,28 @@ results in...
 
 ```
 {% set myString = 'active_model' %}
-myString|camelize
+{{ myString|camelize }}
 ```
 results in...
 'ActiveModel'
 
 ```
 {% set myString = 'active_model', true %}
-myString|camelize
+{{ myString|camelize }}
 ```
 results in...
 'activeModel'
 
 ```
 {% set myString = 'active_model/errors' %}
-myString|camelize
+{{ myString|camelize }}
 ```
 results in...
 'ActiveModel\Errors'
 
 ```
 {% set myString = 'active_model/errors', true %}
-myString|camelize
+{{ myString|camelize }}
 ```
 results in...
 'activeModel\Errors'
@@ -132,14 +132,14 @@ results in...
 
 ```
 {% set myString = 'ActiveModel' %}
-myString|underscore
+{{ myString|underscore }}
 ```
 results in...
 'active_model'
 
 ```
 {% set myString = 'ActiveModel\Errors' %}
-myString|underscore
+{{ myString|underscore }}
 ```
 results in...
 'active_model/errors'
@@ -149,14 +149,14 @@ results in...
 
 ```
 {% set myString = 'employee_salary' %}
-myString|humanize
+{{ myString|humanize }}
 ```
 results in...
 "Employee salary"
 
 ```
 {% set myString = 'author_id' %}
-myString|humanize
+{{ myString|humanize }}
 ```
 results in...
 "Author"
@@ -166,28 +166,28 @@ results in...
 
 ```
 {% set myString = 'man from the boondocks' %}
-myString|titleize
+{{ myString|titleize }}
 ```
 results in...
 "Man From The Boondocks"
 
 ```
 {% set myString = 'x-men: the last stand' %}
-myString|titleize
+{{ myString|titleize }}
 ```
 results in...
 "X Men: The Last Stand"
 
 ```
 {% set myString = 'TheManWithoutAPast' %}
-myString|titleize
+{{ myString|titleize }}
 ```
 results in...
 "The Man Without A Past"
 
 ```
 {% set myString = 'raiders_of_the_lost_ark' %}
-myString|titleize
+{{ myString|titleize }}
 ```
 results in...
 "Raiders Of The Lost Ark"
@@ -197,42 +197,42 @@ results in...
 
 ```
 {% set myNumber = 1 %}
-myNumber|ordinal
+{{ myNumber|ordinal }}
 ```
 results in...
 "st"
 
 ```
 {% set myNumber = 2 %}
-myNumber|ordinal
+{{ myNumber|ordinal }}
 ```
 results in...
 "nd"
 
 ```
 {% set myNumber = 1002 %}
-myNumber|ordinal
+{{ myNumber|ordinal }}
 ```
 results in...
 "nd"
 
 ```
 {% set myNumber = 1003 %}
-myNumber|ordinal
+{{ myNumber|ordinal }}
 ```
 results in...
 "rd"
 
 ```
 {% set myNumber = -11 %}
-myNumber|ordinal
+{{ myNumber|ordinal }}
 ```
 results in...
 "th"
 
 ```
 {% set myNumber = -1021 %}
-myNumber|ordinal
+{{ myNumber|ordinal }}
 ```
 results in...
 "st"
@@ -242,42 +242,42 @@ results in...
 
 ```
 {% set myNumber = 1 %}
-myNumber|ordinalize
+{{ myNumber|ordinalize }}
 ```
 results in...
 "1st"
 
 ```
 {% set myNumber = 2 %}
-myNumber|ordinalize
+{{ myNumber|ordinalize }}
 ```
 results in...
 "2nd"
 
 ```
 {% set myNumber = 1002 %}
-myNumber|ordinalize
+{{ myNumber|ordinalize }}
 ```
 results in...
 "1002nd"
 
 ```
 {% set myNumber = 1003 %}
-myNumber|ordinalize
+{{ myNumber|ordinalize }}
 ```
 results in...
 "1003rd"
 
 ```
 {% set myNumber = -11 %}
-myNumber|ordinalize
+{{ myNumber|ordinalize }}
 ```
 results in...
 "-11th"
 
 ```
 {% set myNumber = -1021 %}
-myNumber|ordinalize
+{{ myNumber|ordinalize }}
 ```
 results in...
 "-1021st"
