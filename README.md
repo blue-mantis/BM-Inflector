@@ -21,6 +21,8 @@ Simply pass the string to one of the custom twig methods listed below, like so:
 
 ## Custom Twig Methods
 
+# pluralize
+
 ```
 {% set myString = 'post' %}
 myString|pluralize
