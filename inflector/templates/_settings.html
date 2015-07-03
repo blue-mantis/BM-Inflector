@@ -1,0 +1,12 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+	first:        true,
+	label:        "Language"|t,
+	id:           'language',
+	name:         'language',
+	instructions: "(en,fr,nb,es,tr)"|t,
+	value:        settings.language,
+	autofocus:    true,
+	errors:       settings.getErrors('language')
+}) }}
