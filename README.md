@@ -59,7 +59,7 @@ results in...
 "CamelChildren"
 
 
-# singularize
+### singularize
 
 ```
 {% set myString = 'posts' %}
@@ -97,7 +97,7 @@ results in...
 "CamelChild"
 
 
-# camelize
+### camelize
 
 ```
 {% set myString = 'active_model' %}
@@ -128,7 +128,7 @@ results in...
 'activeModel\Errors'
 
 
-# underscore
+### underscore
 
 ```
 {% set myString = 'ActiveModel' %}
@@ -145,7 +145,7 @@ results in...
 'active_model/errors'
 
 
-# humanize
+### humanize
 
 ```
 {% set myString = 'employee_salary' %}
@@ -162,7 +162,7 @@ results in...
 "Author"
 
 
-# titleize
+### titleize
 
 ```
 {% set myString = 'man from the boondocks' %}
@@ -193,7 +193,7 @@ results in...
 "Raiders Of The Lost Ark"
 
 
-# ordinal
+### ordinal
 
 ```
 {% set myNumber = 1 %}
@@ -238,7 +238,7 @@ results in...
 "st"
 
 
-# ordinalize
+### ordinalize
 
 ```
 {% set myNumber = 1 %}
